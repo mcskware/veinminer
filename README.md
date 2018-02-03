@@ -12,7 +12,7 @@ You can configure the maximum number of connected blocks to be mined by setting 
 Notes:
 - This datapack uses a depth first search, so if you're using this on a large patch of identical blocks, you will probably see strange patterns of mined blocks. It works great on smaller collections of blocks, like a simple tree or leaves.
 - Only a single durability of the tool is used. It wouldn't be difficult to add more durability loss, but you'd need to take into account Unbreaking enchants on the tools.
-- Fortune enchants on the tool used are not taken into account when mining connected blocks. This seems like a decent balance against the durability used when vein mining.
+- Fortune and Silk Touch enchants on the tool used are not taken into account when mining connected blocks. This seems like a decent balance against the durability used when vein mining.
 - I'm using a block in the world to keep track of what block was last looked at by the player. This block lives at coordinates (8 5 10). If this chunk is not loaded, it's very possible this datapack will fail. I'm unsure how to keep track of this block in a way that doesn't depend on a loaded chunk.
 
 As I'm still very new to Minecraft command programming, comments and critiques are more than welcome! I'm sure I've done some things horribly inefficiently, and probably too verbosely as well.
