@@ -16,4 +16,4 @@ scoreboard players reset @p vdiamondaxe
 scoreboard players reset @p vdiamondpickaxe
 scoreboard players reset @p vdiamondshovel
 
-execute if score #holdingveinminer veinminer matches 1 at @e[type=armor_stand,nbt={ArmorItems:[{tag:{veinminer:1b}}]}] positioned ~ ~0.5 ~ if block ~ ~ ~ minecraft:air run function mcvein:mine/begin
+execute if score #holdingveinminer veinminer matches 1 at @e[type=area_effect_cloud,nbt={Tags:["veinminer"]}] positioned ~ ~0.5 ~ if block ~ ~ ~ minecraft:air run function mcvein:mine/begin
