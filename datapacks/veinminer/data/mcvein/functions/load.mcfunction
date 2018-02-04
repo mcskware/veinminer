@@ -20,3 +20,7 @@ scoreboard objectives add vdiamondshovel minecraft.used:minecraft.diamond_shovel
 
 # configure the max number of blocks to veinmine
 scoreboard players set #veinminelimit veinminer 32
+
+# configure the max distance to raycast when finding the block the player is looking at
+# this is in tenths of a block, so 80 would equal 8 meters
+scoreboard players set #raycastdistance veinminer 80
